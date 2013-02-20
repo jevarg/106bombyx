@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1361317133 source:c:\users\jean\documents\projets\106bombyx\main.cpp
+1361367774 source:c:\users\jean\documents\projets\106bombyx\main.cpp
 	"main.h"
 
 1325738640 c:\sdl\include\sdl\sdl.h
@@ -192,16 +192,16 @@
 	"begin_code.h"
 	"close_code.h"
 
-1361315995 source:c:\users\jean\documents\projets\106bombyx\pause.cpp
+1361367774 source:c:\users\jean\documents\projets\106bombyx\pause.cpp
 	"main.h"
 
-1361319117 c:\users\jean\documents\projets\106bombyx\main.h
+1361367774 c:\users\jean\documents\projets\106bombyx\main.h
 	<iostream>
 	<SDL.h>
 
-1361317223 source:c:\users\jean\documents\projets\106bombyx\putpixel.cpp
+1361367774 source:c:\users\jean\documents\projets\106bombyx\putpixel.cpp
 	"main.h"
 
-1361317105 source:c:\users\jean\documents\projets\106bombyx\sdl_func.cpp
+1361367774 source:c:\users\jean\documents\projets\106bombyx\sdl_func.cpp
 	"main.h"
 
