@@ -6,28 +6,9 @@
 
 #include "main.h"
 
-void    draw_function(SDL_Surface **ecran)
+void    draw_function(SDL_Surface **ecran, int k)
 {
-
-}
-
-void    draw_axes(SDL_Surface **ecran)
-{
-    for (int i = 0; i < WIN_X; i++)
-    {
-        putpixel(*ecran, i, WIN_Y / 2, 0xFFFFFF); //Drawing X Axe
-    }
-    for (int i = 0; i < WIN_Y; i++)
-    {
-        putpixel(*ecran, WIN_X / 2, i, 0xFFFFFF); // Drawing Y Axe
-    }
-    for(int i = 7; i != 0; i--)
-    {
-        putpixel(*ecran, (WIN_X / 2) - i, i, 0xFFFFFF); // Drawing X left-arrow
-        putpixel(*ecran, (WIN_X / 2) + i, i, 0xFFFFFF); // Drawing X right-arrow
-        putpixel(*ecran, WIN_X - i - 1, (WIN_Y / 2) - i, 0xFFFFFF); // Drawing Y up-arrow
-        putpixel(*ecran, WIN_X - i - 1, (WIN_Y / 2) + i, 0xFFFFFF); // Drawing Y down-arrow
-    }
+    k * 10 * ((1000 - 10) / 1000)
 }
 
 void putpixel(SDL_Surface *surface, int x, int y, Uint32 pixel)

@@ -16,7 +16,6 @@
 void    pause();
 void    SDL_func(SDL_Surface **ecran);
 void    putpixel(SDL_Surface *surface, int x, int y, Uint32 color);
-void    draw_axes(SDL_Surface **surface);
-void    draw_function(SDL_Surface **ecran);
+void    draw_function(SDL_Surface **ecran, int k);
 
 #endif // MAIN_H_INCLUDED

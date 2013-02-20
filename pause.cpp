@@ -20,5 +20,7 @@ void pause()
                 continuer = 0;
                 break;
         }
+        if (event.key.keysym.sym==SDLK_ESCAPE)
+            continuer = 0;
     }
 }
