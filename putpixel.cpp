@@ -8,7 +8,7 @@
 
 void    draw_function(SDL_Surface **ecran, int k)
 {
-    k * 10 * ((1000 - 10) / 1000)
+    //k * 10 * ((1000 - 10) / 1000)
 }
 
 void putpixel(SDL_Surface *surface, int x, int y, Uint32 pixel)

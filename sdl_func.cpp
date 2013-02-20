@@ -17,5 +17,7 @@ void    SDL_func(SDL_Surface **ecran)
         exit(EXIT_FAILURE);
     }
 
+    SDL_WM_SetIcon(SDL_LoadBMP("icon.bmp"), NULL);
+
     SDL_WM_SetCaption("106bombyx", NULL);
 }
