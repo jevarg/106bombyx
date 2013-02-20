@@ -6,9 +6,17 @@
 
 #include "main.h"
 
-void    draw_function(SDL_Surface **ecran, int k)
+void    draw_function(SDL_Surface **ecran, double k)
 {
-    //k * 10 * ((1000 - 10) / 1000)
+    int x[100];
+
+    x[1] = 10;
+    putpixel(*ecran, 1, (WIN_Y - 1) - x[1], 0xFFFFFF);
+    for (int i = 2; i < 100; i++)
+    {
+        x[i] = (k * x[i - 1] * (1000 - x[i - 1])) / 1000;
+        putpixel(*ecran, i, (WIN_Y - 1) - x[i], 0xFFFFFF);
+    }
 }
 
 void putpixel(SDL_Surface *surface, int x, int y, Uint32 pixel)

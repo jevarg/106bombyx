@@ -10,14 +10,12 @@
 #include <iostream>
 #include <SDL.h>
 
-IDR_MAINFRAME ICON "full.ico"
-
-#define WIN_X 800
-#define WIN_Y 600
+#define WIN_X 1000
+#define WIN_Y 1000
 
 void    pause();
 void    SDL_func(SDL_Surface **ecran);
 void    putpixel(SDL_Surface *surface, int x, int y, Uint32 color);
-void    draw_function(SDL_Surface **ecran, int k);
+void    draw_function(SDL_Surface **ecran, double k);
 
 #endif // MAIN_H_INCLUDED
