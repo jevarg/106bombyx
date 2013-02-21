@@ -51,14 +51,14 @@ void    draw_function2(SDL_Surface **ecran, int imin, int imax)
     x = 10;
     for (double k = 1.0; k <= 4.0; k += 0.01)
     {
-        for (int i = 0; i < imin; i++)
+        for (int i = 0; i <= imin; i++)
         {
             x = ((k * x * (WIN_Y - x)) / 1000);
         }
         for (int i = imin; i < imax; i++)
         {
             x = ((k * x * (WIN_Y - x)) / 1000);
-                putpixel(*ecran, (k - 1) * 333, WIN_Y - x, 0xFFFFFF);
+            putpixel(*ecran, (k - 1) * 333, WIN_Y - x, 0xFFFFFF);
         }
         x = 10;
     }
