@@ -21,7 +21,7 @@ void    draw_axes(SDL_Surface **ecran)
 void    draw_function1(SDL_Surface **ecran, double k)
 {
     int i = 0;
-    int x[100];
+    double x[100];
 
     x[i++] = 0;
     putpixel(*ecran, 0, WIN_Y, 0x1E7FCB);
@@ -35,11 +35,11 @@ void    draw_function1(SDL_Surface **ecran, double k)
         drawLine(*ecran, j - 10, WIN_Y - x[i - 1], j, WIN_Y - x[i], 0x1E7FCB);
         i++;
     }
-    for (int j = 990; j < 1010; j += 10)
+    for (int j = 990; j < 1000; j += 10)
     {
         x[i] = (k * x[i - 1] * (WIN_Y - x[i - 1])) / 1000;
         putpixel(*ecran, j, WIN_Y - x[i], 0x1E7FCB);
-        drawLine(*ecran, j - 10, (WIN_Y - 1) - x[i - 1], j, WIN_Y - x[i], 0x1E7FCB);
+        drawLine(*ecran, j - 10, WIN_Y - x[i - 1], j, WIN_Y - x[i], 0x1E7FCB);
         i++;
     }
 }
@@ -54,13 +54,11 @@ void    draw_function2(SDL_Surface **ecran, int imin, int imax)
         for (int i = 0; i < imin; i++)
         {
             x = ((k * x * (WIN_Y - x)) / 1000);
-            //putpixel(*ecran, k * 250, WIN_Y - x, 0xFFFFFF);
         }
         for (int i = imin; i < imax; i++)
         {
             x = ((k * x * (WIN_Y - x)) / 1000);
-            //for (int pitch = 0; pitch < 250; pitch++)
-                putpixel(*ecran, k * 250, WIN_Y - x, 0xFFFFFF);
+                putpixel(*ecran, (k - 1) * 333, WIN_Y - x, 0xFFFFFF);
         }
         x = 10;
     }
