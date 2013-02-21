@@ -205,10 +205,10 @@
 1361372312 source:c:\users\jean\documents\projets\106bombyx\sdl_func.cpp
 	"main.h"
 
-1361396160 source:c:\users\jeang_000\documents\github\106bombyx\main.cpp
+1361406662 source:c:\users\jeang_000\documents\github\106bombyx\main.cpp
 	"main.h"
 
-1361396178 c:\users\jeang_000\documents\github\106bombyx\main.h
+1361400350 c:\users\jeang_000\documents\github\106bombyx\main.h
 	<iostream>
 	<cstdio>
 	<cmath>
@@ -217,7 +217,7 @@
 1361389422 source:c:\users\jeang_000\documents\github\106bombyx\pause.cpp
 	"main.h"
 
-1361395813 source:c:\users\jeang_000\documents\github\106bombyx\putpixel.cpp
+1361408120 source:c:\users\jeang_000\documents\github\106bombyx\putpixel.cpp
 	"main.h"
 
 1361393954 source:c:\users\jeang_000\documents\github\106bombyx\sdl_func.cpp

@@ -22,14 +22,20 @@ int main(int argc, char **argv)
         SDL_Surface *ecran = NULL;
         SDL_func(&ecran);
         draw_axes(&ecran);
-        draw_function(&ecran, atof(argv[1]));
+        draw_function1(&ecran, atof(argv[1]));
         SDL_Flip(ecran);
         pause();
         SDL_Quit();
     }
-    else if (argc == 3)
+    else if (1)
     {
-        return (EXIT_SUCCESS);
+        SDL_Surface *ecran = NULL;
+        SDL_func(&ecran);
+        //draw_function2(&ecran, atoi(argv[1]), atoi(argv[2]));
+        draw_function2(&ecran, 10000, 10010);
+        SDL_Flip(ecran);
+        pause();
+        SDL_Quit();
     }
     return (EXIT_SUCCESS);
 }
