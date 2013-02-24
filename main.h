@@ -10,7 +10,9 @@
 #include <iostream>
 #include <cstdio>
 #include <cmath>
+#include <string>
 #include <SDL.h>
+#include <SDL_ttf.h>
 
 #define WIN_X 1000
 #define WIN_Y 1000

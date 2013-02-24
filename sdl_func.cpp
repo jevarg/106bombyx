@@ -9,6 +9,7 @@
 void    SDL_func(SDL_Surface **ecran)
 {
     SDL_Init(SDL_INIT_VIDEO);
+    TTF_Init();
 
     *ecran = SDL_SetVideoMode(WIN_X, WIN_Y, 32, SDL_HWSURFACE);
     if (*ecran == NULL)

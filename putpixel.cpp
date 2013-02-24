@@ -8,6 +8,37 @@
 
 void    draw_axes(SDL_Surface **ecran)
 {
+    char number[5];
+
+    SDL_Surface *grad = NULL;
+    SDL_Rect pos;
+    SDL_Color white = {255, 255, 255};
+
+    TTF_Font *font = NULL;
+    font = TTF_OpenFont("arial.ttf", 10);
+
+        sprintf(number, "0");
+        grad = TTF_RenderText_Solid(font, number, white);
+        pos.x = 7;
+        pos.y = WIN_Y - 17;
+        SDL_BlitSurface(grad, NULL, *ecran, &pos);
+
+    for (int x = 100; x < WIN_X; x += 100)
+    {
+        sprintf(number, "%d", x);
+        grad = TTF_RenderText_Solid(font, number, white);
+        pos.x = x;
+        pos.y = WIN_Y - 17;
+        SDL_BlitSurface(grad, NULL, *ecran, &pos);
+    }
+    for (int y = WIN_Y; y > 0; y -= 100)
+    {
+        sprintf(number, "%d", y);
+        grad = TTF_RenderText_Solid(font, number, white);
+        pos.x = 7;
+        pos.y = WIN_Y - y;
+        SDL_BlitSurface(grad, NULL, *ecran, &pos);
+    }
     for (int x = 0; x < WIN_X - 1; x++)
     {
         putpixel(*ecran, x, WIN_Y - 1, 0xFFFFFF);
@@ -16,6 +47,8 @@ void    draw_axes(SDL_Surface **ecran)
     {
         putpixel(*ecran, 0, y, 0xFFFFFF);
     }
+
+    TTF_CloseFont(font);
 }
 
 void    draw_function1(SDL_Surface **ecran, double k)

@@ -19,6 +19,7 @@
 					<Add option="-lmingw32" />
 					<Add option="-lSDLmain" />
 					<Add option="-lSDL" />
+					<Add option="-lSDL_ttf" />
 					<Add directory="C:/SDL/lib" />
 				</Linker>
 			</Target>

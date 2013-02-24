@@ -21,9 +21,12 @@ int main(int argc, char **argv)
         }
         SDL_Surface *ecran = NULL;
         SDL_func(&ecran);
+        draw_axes(&ecran);
         draw_function1(&ecran, atof(argv[1]));
         SDL_Flip(ecran);
         pause();
+
+        TTF_Quit();
         SDL_Quit();
     }
     else if (argc > 2)
@@ -37,9 +40,12 @@ int main(int argc, char **argv)
         }
         SDL_Surface *ecran = NULL;
         SDL_func(&ecran);
+        draw_axes(&ecran);
         draw_function2(&ecran, atoi(argv[1]), atoi(argv[2]));
         SDL_Flip(ecran);
         pause();
+
+        TTF_Quit();
         SDL_Quit();
     }
     else
